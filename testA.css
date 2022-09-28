@@ -43,7 +43,7 @@ body{
     font-size: 17px;
     background-color: white;
     border-radius: 50vh;
-}
+    }
 }
 
 @media screen and (min-width:601px) and (max-width:1279px){
@@ -59,119 +59,119 @@ body{
      z-index: 90;
     }
     .PCmenu{
-     display: none;
+      display: none;
     }
     .drawer_hidden {
-     display: none;
+      display: none;
     }
     .smIMG{
-        display: none;
+      display: none;
     }
 
-.drawer_open {
-  display: flex;
-  height: 60px;
-  width: 60px;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 100;
-  cursor: pointer;
- }
+    .drawer_open {
+      display: flex;
+      height: 60px;
+      width: 60px;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 100;
+      cursor: pointer;
+    }
 
- .drawer_open span,
- .drawer_open span:before,
- .drawer_open span:after {
-   content: '';
-   display: block;
-   height: 3px;
-   width: 25px;
-   background: black;
-   transition: 0.5s;
-   position: absolute;
- }
+    .drawer_open span,
+    .drawer_open span:before,
+    .drawer_open span:after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 25px;
+      background: black;
+      transition: 0.5s;
+      position: absolute;
+    }
 
- .drawer_open span:before {
-  bottom: 8px;
- }
- .drawer_open span:after {
-  top: 8px;
- }
+    .drawer_open span:before {
+      bottom: 8px;
+    }
+    .drawer_open span:after {
+      top: 8px;
+    }
 /*✖アイコンのアニメーション記述開始️*/
- #drawer_input:checked ~ .drawer_open span::before {
-  bottom: 0;
-  transform: rotate(45deg);
- }
- #drawer_input:checked ~ .drawer_open span {
-  background: rgba(255, 255, 255, 0);
- }
- #drawer_input:checked ~ .drawer_open span::after {
-  top: 0;
-  transform: rotate(-45deg);
+    #drawer_input:checked ~ .drawer_open span::before {
+      bottom: 0;
+      transform: rotate(45deg);
+    }
+    #drawer_input:checked ~ .drawer_open span {
+      background: rgba(255, 255, 255, 0);
+    }
+    #drawer_input:checked ~ .drawer_open span::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
   /*✖アイコンのアニメーション終わり️*/
- }
 
- .sm {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 60px;
-  left: 100%; /* メニューを画面の外に飛ばす */
-  z-index: 99;
-  background: black;
-  background: rgba(0, 0, 0, 0.8);
-  transition: 0.5s;
-  display:flex;
-  flex-flow: column;
-  justify-content:center;
-  align-items:center;
- }
- #drawer_input:checked ~ .sm {
-  left: 0;/* メニューを画面に入れる */
- }
+    .sm {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 60px;
+      left: 100%; /* メニューを画面の外に飛ばす */
+      z-index: 99;
+      background: black;
+      background: rgba(0, 0, 0, 0.8);
+      transition: 0.5s;
+      display:flex;
+      flex-flow: column;
+      justify-content:center;
+      align-items:center;
+    }
+    #drawer_input:checked ~ .sm {
+      left: 0;/* メニューを画面に入れる */
+    }
  
- nav ul{
-   list-style: none;
-   position: absolute;
-   top: 0;
-   left: 50;
-   display:flex;
-   flex-flow: column;
-   justify-content:space-around;
-   gap:40px;
- }
+    nav ul{
+      list-style: none;
+      position: absolute;
+      top: 0;
+      left: 50;
+      display:flex;
+      flex-flow: column;
+      justify-content:space-around;
+      gap:40px;
+    }
  
- rt{
-    color: #ff9800;
-}
+    rt{
+      color: #ff9800;
+    }
  
- .FV-container{
-   margin: initial;
-   margin-top:60px;
- }
- .main-content{
-     background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position:center;
-  }
-  .btn3{
-    display: inline;
-    padding: 20px;
-    white-space: nowrap;
-    text-align: center;
-    border:solid silver;
-    font-size: 17px;
-    background-color: white;
-    border-radius: 50vh;
-}
+    .FV-container{
+      margin: initial;
+      margin-top:60px;
+    }
+    .main-content{
+      background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position:center;
+    }
+    .btn3{
+      display: inline;
+      padding: 20px;
+      white-space: nowrap;
+      text-align: center;
+      border:solid silver;
+      font-size: 17px;
+      background-color: white;
+      border-radius: 50vh;
+    }
   
-  .about{
-     flex-direction: column;
- }
-  .VD{
-   width:60%;
- }
+    .about{
+      flex-direction: column;
+    }
+    .VD{
+      width:60%;
+    }
 }
 
 @media screen and (max-width:600px){/*600以下の時に適用*/
@@ -195,47 +195,47 @@ body{
     }
    
 
-.drawer_open {
-  display: flex;
-  height: 60px;
-  width: 60px;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 100;
-  cursor: pointer;
- }
+    .drawer_open {
+      display: flex;
+      height: 60px;
+      width: 60px;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 100;
+     cursor: pointer;
+    }
 
- .drawer_open span,
- .drawer_open span:before,
- .drawer_open span:after {
-   content: '';
-   display: block;
-   height: 3px;
-   width: 25px;
-   background: black;
-   transition: 0.5s;
-   position: absolute;
- }
+    .drawer_open span,
+    .drawer_open span:before,
+    .drawer_open span:after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 25px;
+      background: black;
+      transition: 0.5s;
+      position: absolute;
+    }
 
- .drawer_open span:before {
-  bottom: 8px;
- }
- .drawer_open span:after {
-  top: 8px;
- }
+    .drawer_open span:before {
+      bottom: 8px;
+    }
+    .drawer_open span:after {
+      top: 8px;
+    }
 /*✖アイコンのアニメーション記述開始️*/
- #drawer_input:checked ~ .drawer_open span::before {
-  bottom: 0;
-  transform: rotate(45deg);
- }
- #drawer_input:checked ~ .drawer_open span {
-  background: rgba(255, 255, 255, 0);
- }
- #drawer_input:checked ~ .drawer_open span::after {
-  top: 0;
-  transform: rotate(-45deg);
- }
+    #drawer_input:checked ~ .drawer_open span::before {
+      bottom: 0;
+      transform: rotate(45deg);
+    }
+    #drawer_input:checked ~ .drawer_open span {
+     background: rgba(255, 255, 255, 0);
+    }
+    #drawer_input:checked ~ .drawer_open span::after {
+     top: 0;
+     transform: rotate(-45deg);
+    }
      /*✖アイコンのアニメーション終わり️*/
 
     .sm {
@@ -284,18 +284,14 @@ body{
      margin-top: -40%;
    }
    .main1{
-     display: column;
-     justify-content:center;
+     margin:initial;
+     display: flex;
      align-items:center;
    }
     h1{
       font-size: 2rem;
     }
-    .ITEM img{
-     width:auto;
-     max-width:90%;
-     height:auto;
-    }
+
     .btn3{
       display: none;
     }
@@ -373,12 +369,12 @@ a{
 main{
     height:auto;
     width:100%;
+    max-width:100%;
 }
 
 .FV-container{
    max-width: 1140px;
-   widht:100%;
-   padding:0px 50px;
+   padding:0px 5%;
    margin-left:  auto;
    margin-right: auto;
 }
@@ -398,11 +394,22 @@ h1{
 }
 
 .ITEM{
+    width: fit-content;
+    max-width:100vw;
+    height:auto;
     display: flex;
     justify-content:center;
     align-items:center;
-    gap:10px;
-    max-width:100%;
+    gap:10px;   
+}
+
+.ITEMimgA{
+    width: 27.5%;
+    height: auto;
+}
+.ITEMimgB{
+    width: 40%;
+    height: auto;
 }
 
 .main-B{
